@@ -12,6 +12,7 @@ package org.eclipse.che.plugin.docker.client;
 
 import org.eclipse.che.plugin.docker.client.dto.AuthConfig;
 
+import java.util.HashMap;
 import java.util.Map;
 
 /**
@@ -25,6 +26,6 @@ public class NoOpDockerRegistryDynamicAuthResolverImpl implements DockerRegistry
 
     @Override
     public Map<String, AuthConfig> getDynamicXRegistryConfig() {
-        return null;
+        return new HashMap<>();
     }
 }
